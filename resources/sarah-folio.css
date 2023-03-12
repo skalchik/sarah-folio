@@ -1,0 +1,50 @@
+* {
+margin: 0;
+}
+html, 
+body,
+.columns {
+    margin: 0;
+    height: 100%;
+}
+body {
+    background-image: url(./images/green-and-white-wall.jpg);
+}
+h1 {
+    font-family: 'Cinzel', cursive;
+}
+.columns {
+    Font-Family: 'Fauna One', Cursive;
+    display: flex;
+    flex-direction: row;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    margin-top: 85px;
+    background-color: rgb(174, 186, 160, 0.25);
+}
+div {
+    border: 1px solid black;
+    padding: 15px;
+}
+.left-column,
+.middle-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    justify-content: space-around;
+}
+.left-column,
+.middle-column {
+    margin-right: 15px;
+}
+.middle-column,
+.right-column {
+    margin-left: 15px;
+}
+.box {
+    background-color: rgb(233, 226, 199, 0.4);
+    height: 155px;
+    width: 355px;
+}
