@@ -55,6 +55,7 @@ div {
 .left-column {
     display: flex;
     flex-direction: row;
+    margin-right: 1em;
 }
 .box {
     width: 100%;
@@ -74,7 +75,7 @@ div {
     padding-right: 5em;
 }
 .projects h2 {
-    padding-right: 2em;
+    padding-right: 1.5em;
 }
 .contact h2 {
     padding-right: 4em;
