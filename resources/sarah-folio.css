@@ -149,21 +149,25 @@ p {
         color: black;
     }
     .columns {
-        height: 75%;
-        align-items: start;
+        height: 85%;
+        align-content: start;
+        margin-top: 25px;
+        /*background: linear-gradient(transparent 0%, #B2A399AA 25%, #B2A399BB 35%, #B2A399DD 50%, #B2A399BB 65%, #B2A399AA 85%, transparent 100%);*/
+        background: linear-gradient(transparent 0%, transparent 15%, #B2A399BB 30%, #B2A399DD 50%, #B2A399BB 65%, #B2A399AA 85%, transparent 100%);
     }
     .middle-column{
-        margin-top: -100px;
         width: 100%;
         height: fit-content;
     }
     .left-column {
         height: fit-content;
         margin-right: 0;
-        margin-top: -175px;
     }
     .name h1 {
         width: 100%;
+    }
+    .box {
+        margin-top: 25px;
     }
     #envelope,
     #linkedin {
