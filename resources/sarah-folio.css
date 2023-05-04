@@ -25,19 +25,21 @@ h2 {
 span {
     font-size: 25px;
 }
+.small-contact {
+    display: none;
+}
 .columns {
     Font-Family: 'Merriweather Sans', Sans-Serif;
     Font-Size: 17px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60%;
+    height: 55%;
     width: 100%;
     background: linear-gradient(transparent 0%, #B2A399AA 25%, #B2A399BB 35%, #B2A399DD 50%, #B2A399BB 65%, #B2A399AA 85%, transparent 100%);
     color: #201A18;
-    margin-top: 100px;
+    margin-top: 175px;
 }
 div {
     padding-top: 15px;
@@ -49,7 +51,7 @@ div {
     justify-content: center;
     align-content: space-between;
     width: 100%;
-    margin-top: -25px;
+    margin-top: -15px;
 }
 
 .left-column {
@@ -63,6 +65,7 @@ div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: max-content;
 }
 .skills-list {
     display: flex;
@@ -70,16 +73,12 @@ div {
 }
 .split-left {
     margin-right: 1em;
+    padding-top: 0;
 }
-.skills h2 {
-    padding-right: 5em;
+.split-right {
+    padding-top: 0;
 }
-.projects h2 {
-    padding-right: 1.5em;
-}
-.contact h2 {
-    padding-right: 4em;
-}
+
 .name {
     display: flex;
     align-items: center;
@@ -93,7 +92,7 @@ a {
     margin-right: 20px;
 }
 ul {
-    padding-inline-start: 30px;
+    padding-inline-start: 0px;
 }
 li {
     list-style: none;
@@ -109,7 +108,68 @@ p {
 .icon {
     margin-right: 10px;
 }
-.link:hover ~ .target {
-    float: right;
-    z-index: 2;
+@media only screen and (max-width: 850px) {
+    div {
+        padding: 0;
+    }
+    .tag {
+        display: none;
+    }
+    .small-contact {
+        display: inline;
+        text-align: start;
+    }
+    .columns {
+        margin-top: 150px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .middle-column {
+        width: 50%;
+        align-items: center;
+    }
+    .left-column {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .name {
+        text-align: center;
+    }
+    .name h1 {
+        width: 50%;
+    }
+    .contact {
+        display: none;
+    }
+}
+@media only screen and (max-width: 535px) {
+    * {
+        color: black;
+    }
+    .columns {
+        height: 75%;
+        align-items: start;
+    }
+    .middle-column{
+        margin-top: -100px;
+        width: 100%;
+        height: fit-content;
+    }
+    .left-column {
+        height: fit-content;
+        margin-right: 0;
+        margin-top: -175px;
+    }
+    .name h1 {
+        width: 100%;
+    }
+    #envelope,
+    #linkedin {
+        display: none;
+    }
+    .small-contact {
+        text-align: center;
+    }
 }
