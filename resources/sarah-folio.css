@@ -147,14 +147,14 @@ p {
 @media only screen and (max-width: 535px) {
     * {
         color: black;
-        overflow: scroll;
     }
     .columns {
-        height: 85%;
+        height: 100%;
         align-content: start;
         margin-top: 25px;
         /*background: linear-gradient(transparent 0%, #B2A399AA 25%, #B2A399BB 35%, #B2A399DD 50%, #B2A399BB 65%, #B2A399AA 85%, transparent 100%);*/
-        background: linear-gradient(transparent 0%, transparent 15%, #B2A399BB 30%, #B2A399DD 50%, #B2A399BB 65%, #B2A399AA 85%, transparent 100%);
+        background: linear-gradient(transparent 0%, transparent 15%, #B2A399BB 30%, #B2A399DD 50%, #B2A399BB 65%, #B2A399AA 100%);
+        overflow: scroll;
     }
     .middle-column{
         width: 100%;
@@ -166,9 +166,6 @@ p {
     }
     .name h1 {
         width: 100%;
-    }
-    .box {
-        margin-top: 25px;
     }
     #envelope,
     #linkedin {
